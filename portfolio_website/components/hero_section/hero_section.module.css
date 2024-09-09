@@ -1,0 +1,329 @@
+/* Button */
+.btn {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 140px;
+  height: 50px;
+  background: linear-gradient(to top, #ff4500, #f15a23, #f77b4e);
+  color: #f5f5f5;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 15px 30px rgba(163, 77, 55, 0.5);
+  overflow: hidden;
+  font-weight: bold;
+  padding-right: 0.5rem;
+  /* transition: background 0.5s; */
+}
+
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.btn:hover {
+  background: linear-gradient(to top, #ff4500, #f15a23, #f77b4e);
+  text-decoration: underline;
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+  text-decoration: underline;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* HERO */
+/* From Uiverse.io by biswacpcode */
+.hero {
+  color: #fe6b59;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.hero::before {
+  margin-left: auto;
+}
+
+.hero::after,
+.hero::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: #d1b89b;
+  display: block;
+  transition: 0.7s;
+}
+
+.hero:hover::after,
+.hero:hover::before {
+  width: 100%;
+}
+
+.heroh2 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.heroP {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  width: 700px;
+}
+
+.heroImage {
+  position: absolute;
+  right: 8rem;
+  top: 1rem;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  background-image: url('/images/about_pic.png');
+}
+
+/* Contact */
+.contact {
+  color: #090909;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  padding: 0.75em 2rem;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 3px 3px 12px #ff4500, -6px -6px 12px #360606;
+  font-weight: bold;
+}
+
+.contact:active {
+  color: #666;
+  box-shadow: 0px 0px 0px #9c0202, 0px 0px 0px #ac0b0b, inset 4px 4px 12px #d30808, inset -4px -4px 12px #000000;
+}
+
+.helloButton {
+  font-size: 1.25rem;
+  border-radius: 1rem;
+  background-color: rgba(254, 107, 89, 0.2);
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #f5f5f5;
+  font-style: italic;
+  font-weight: bold;
+  border: 2px solid #d1b89b;
+  transition: all 250ms ease-in-out;
+}
+
+.helloButton:hover {
+  border-color: #fe6b59;
+  color: #f5f5f5;
+  transform: translateY(-0.25rem) scale(1.05);
+}
+
+/* Media Queries for responsive screens */
+
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .btn {
+    width: 85px;
+    height: 35px;
+    border-radius: 5px;
+  }
+
+  .btn span {
+    font-size: 7px;
+  }
+
+  .contact {
+    border-radius: 0.3em;
+    padding: 0.5em 0.9rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    margin-top: -2px;
+  }
+
+  .helloButton {
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(254, 107, 89, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 1rem;
+    color: #f5f5f5;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid #d1b89b;
+    transition: all 250ms ease-in-out;
+  }
+
+  .helloButton:hover {
+    border-color: #fe6b59;
+    color: #f5f5f5;
+    transform: translateY(-0.25rem) scale(1.05);
+  }
+
+  .hero {
+    color: #fe6b59;
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+
+  .heroh2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding-right: 0px;
+  }
+  .heroImage {
+    right: 10rem;
+    top: 1rem;
+    width: 18rem;
+    height: 16.5rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+    margin-bottom: 1rem;
+  }
+
+  .heroP {
+    font-size: 0.6rem;
+    line-height: 1rem;
+    width: 400px;
+  }
+}
+
+/* Small screens (767px and below) */
+@media screen and (max-width: 767px) {}
+
+/* Medium screens (768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .btn {
+    width: 90px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .btn span {
+    font-size: 7px;
+  }
+
+  .contact {
+    border-radius: 0.3em;
+    padding: 0.25em 0.875rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+
+  .helloButton {
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(254, 107, 89, 0.2);
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 1rem;
+    color: #f5f5f5;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid #d1b89b;
+    transition: all 250ms ease-in-out;
+  }
+
+  .helloButton:hover {
+    border-color: #fe6b59;
+    color: #f5f5f5;
+    transform: translateY(-0.25rem) scale(1.05);
+  }
+
+
+  .hero {
+    color: #fe6b59;
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .heroh2 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .btn {
+    font-size: 0.75rem;
+    /* line-height: 1rem; */
+    padding-right: 0px;
+  }
+  .heroImage {
+    right: 10rem;
+    top: 0.5rem;
+    width: 24rem;
+    height: 23rem;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+  }
+
+  .heroP {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    width: 500px;
+  }
+}
