@@ -8,6 +8,8 @@ import {
 } from "next/font/google";
 // import "normalize.css/normalize.css";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const inria = Inria_Sans({
@@ -39,14 +41,13 @@ export const metadata: Metadata = {
   title: "My Portfolio",
   description: "Know about me and my work",
 };
+interface RootLayoutProps {
+  children: ReactNode;
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} ${inria.variable} ${robotoSlab.variable} ${lato.variable} ${robotoSerif.variable}`}
       >
