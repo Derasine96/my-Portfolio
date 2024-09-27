@@ -25,7 +25,7 @@ function MainNav() {
   };
 
   return (
-    <div className="w-full shadow-md max-w-full mx-auto lg:p-4 sm:p-3 bg-primary-lightRed/25 items-center">
+    <header className="sticky top-0 backdrop-blur-sm w-full shadow-md max-w-full mx-auto lg:p-4 sm:p-3 bg-primary-lightRed/30 items-center">
       <div className="flex justify-between items-center">
         {/* Logo Section */}
         {/* <button className={`${styles.navLogo} flex mb-4 mr-12 md:mr-8 md:m-2`}>
@@ -163,7 +163,7 @@ function MainNav() {
           </button>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
