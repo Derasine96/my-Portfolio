@@ -8,7 +8,7 @@ import {
 } from "next/font/google";
 // import "normalize.css/normalize.css";
 import "./globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
+// import { ThemeProvider } from "@/components/theme-provider";
 import { ReactNode } from "react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
